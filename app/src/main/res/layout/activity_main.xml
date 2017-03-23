@@ -14,34 +14,37 @@
         tools:layout_editor_absoluteX="8dp">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/etUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="user name"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="password"
+            android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="buSave"
             android:text="Save" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buLoad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="buLoad"
             android:text="Load" />
 
         <ListView
+            android:id="@+id/LVNews"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
